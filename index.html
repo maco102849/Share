@@ -1,51 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>金沢</title>
-</head>
-<body>
-    <style>
-        .example{
-            font-size: 130%;
-            color : black;
-            font-family: "游ゴシック Medium";
-            font-weight:400%;
-            
-        }
-        .resizeimage img { 
-            width: 100%; 
-        }
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>金沢</title>
+        <link rel="stylesheet" type="text/css" href="slick.css">
+        <link rel="stylesheet" type="text/css" href="slick-theme.css">
 
-        /* ul, ol {
-            color: #1e366a;
-            border: dotted #1e366a 1px;/*ドット 色 太さ*/
-            padding: 0.5em 0.5em 0.5em 2em;
-        }
-      
-        ul li, ol li {
-            line-height: 1.5;
-            padding: 0.5em 0;
-        } */
-    </style>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    </head>
+    <body>
+        <!-- <div class="single-item">
+            <div><img src="img/spring.jpg" width="400" height="300" /></div>
+            <div><img src="img/summer.jpg" width="400" height="300" /></div>
+            <div><img src="img/autumn.jpg" width="400" height="300" /></div>
+        </div>
+        <div class="single-item">
+            <div><img src="img_food/map.jpg" width="400" height="300" /></div>
+            <div><img src="img/summer.jpg" width="400" height="300" /></div>
+            <div><img src="img/autumn.jpg" width="400" height="300" /></div>
+        </div>
+     -->
+        <!-- slick jsの読込み -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     
-    <ul>
-        <li><a href="https://www.pref.ishikawa.jp/siro-niwa/kenrokuen/" class="example" >兼六園</a></li>
-        <br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kenrokuen10-r.jpg/1200px-Kenrokuen10-r.jpg" alt="兼六園"  width=".resizeimage img" >
+        <!-- slickの設定 -->
+        <script type="text/javascript">
+        $(function () {
+            $('.single-item').slick({
+            accessibility: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            speed: 400,
+            });
+        });
+        </script>
+
+        <style>
+            .example{
+                font-size: 130%;
+                color : black;
+                font-family: "游ゴシック Medium";
+                font-weight:400%;
+                
+            }
+            .resizeimage img { 
+                width: 100%; 
+            }
+
+            /* ul, ol {
+                background: #fcfcfc;/*背景色*/
+                padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+                border: solid 3px gray;/*線の種類 太さ 色*/
+            }
+
+            ul li, ol li {
+                line-height: 1.5; /*文の行高*/
+                padding: 0.5em 0; /*前後の文との余白*/
+            } */
+        </style>
         
-        <li><a href="https://www.hot-ishikawa.jp/spot/detail_6320.html" class="example" >ひがし茶屋街</a></li>
-        <br>
-        <img src="https://www.kanazawa-kankoukyoukai.or.jp/lsc/upfile/articleDetail/0000/0271/271_3_m.jpg" alt="ひがし茶屋街"  width=".resizeimage img">
+        <ul>
+            <li><a href="https://www.pref.ishikawa.jp/siro-niwa/kenrokuen/" class="example" >兼六園</a></li>
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kenrokuen10-r.jpg/1200px-Kenrokuen10-r.jpg" alt="兼六園"  width=".resizeimage img" > -->
+            
+            <li><a href="https://www.hot-ishikawa.jp/spot/detail_6320.html" class="example" >ひがし茶屋街</a></li>
+            <!-- <img src="https://www.kanazawa-kankoukyoukai.or.jp/lsc/upfile/articleDetail/0000/0271/271_3_m.jpg" alt="ひがし茶屋街"  width=".resizeimage img"> -->
 
-        <li><a href="https://ohmicho-ichiba.com/" class="example" >近江町市場</a></li>
-        <br>
-        <img src="https://ohmicho-ichiba.com/ohmicho_ichiba/wp-content/themes/understrap-child-02/add/img/topimg.jpg" alt="近江町市場"  width=".resizeimage img">
+            <li><a href="https://ohmicho-ichiba.com/" class="example" >近江町市場</a></li>
+            <!-- <img src="https://ohmicho-ichiba.com/ohmicho_ichiba/wp-content/themes/understrap-child-02/add/img/topimg.jpg" alt="近江町市場"  width=".resizeimage img"> -->
 
-        <li><a href="https://www.shirayama.or.jp/" class="example" >白山比咩神社</a></li>
-        <br>
-        <img src="https://www.hot-ishikawa.jp/lsc/upfile/spot/0000/6256/6256_1_l.jpg" alt="白山比咩神社"  width=".resizeimage img">
-    </ul>
-</body>
+            <li><a href="https://www.shirayama.or.jp/" class="example" >白山比咩神社</a></li>
+            <!-- <img src="https://www.hot-ishikawa.jp/lsc/upfile/spot/0000/6256/6256_1_l.jpg" alt="白山比咩神社"  width=".resizeimage img"> -->
+        </ul>
+
+        <ul>
+            <li><a href="https://www.kenrokuen.jp/index.html" class="example" >兼六園茶屋 見城亭</a></li>
+            <ul>
+                <li>予約いるかも</li>
+                <li>1階/カフェ 10:00〜16:30</li>
+                <li>2階/昼食 11:00〜15:00</li>
+            </ul>
+            <div class="single-item">
+                <div><img src="img_food/food1_1.png" width="400" height="300" /></div>
+                <div><img src="img_food/food1_2.png" width="400" height="300" /></div>
+                <div><img src="img_food/map.jpg" width="400" height="300" /></div>
+            </div>
+            <!-- <img src="https://www.kenrokuen.jp/_src/img/bnr_shoka.jpg" alt="兼六園"  width=".resizeimage img" > -->
+            
+            
+            <br>
+            <li><a href="https://www.fumuroya.co.jp/shop-list/cafe-kagafufumuroya/" class="example" >カフェ 加賀麩不室屋</a></li>
+            <ul>
+                <li>お麩のスイーツ屋さん</li>
+                <li>営業時間 9:00~21:00(L.O. 20:00)</li>
+            </ul>
+            <div class="single-item">
+                <div><img src="img_food/food2_1.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food2_2.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food2_3.png" width="400" height="300" /></div>
+            </div>
+
+            <br>
+            <li><a href="https://www.fumuroya.co.jp/shop-list/fumuro-chaya/" class="example" >生麩甘味処 不室茶屋</a></li>
+            <ul>
+                <li>お麩のスイーツ屋さんその２</li>
+                <li>営業時間 10:00~17:00(L.O. 16:30)</li>
+            </ul>
+            <div class="single-item">
+                <div><img src="img_food/food3_1.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food3_2.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food3_3.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food3_4.png" width="400" height="300" /></div>
+            </div>
+            
+            <br>
+            <li><a href="https://notoushi.com/ushijyu/" class="example" >うし重 てらおか</a></li>
+            <ul>
+                <li>能登牛のお店</li>
+                <li>予約いるかも</li>
+                <li>営業時間 11:00-15:00(L.O. 14:30),17:30-20:30(L.O. 20:00)</li>
+            </ul>
+            <div class="single-item">
+                <div><img src="img_food/food4_1.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food4_2.jpg" width="400" height="300" /></div>
+                <div><img src="img_food/food4_3.png" width="400" height="300" /></div>
+            </div>
+        </ul>
+    </body>
 </html>
